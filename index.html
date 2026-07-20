@@ -1,99 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>I'm Sorry ❤️</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#f8cfe0" />
+  <title>I'm Sorry ❤️</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Great+Vibes&display=swap" rel="stylesheet">
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Great+Vibes&display=swap"
-        rel="stylesheet">
-
-    <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
+  <div class="bg-gradient" aria-hidden="true"></div>
+  <div class="bg-glow bg-glow-1" aria-hidden="true"></div>
+  <div class="bg-glow bg-glow-2" aria-hidden="true"></div>
+  <div class="bg-glow bg-glow-3" aria-hidden="true"></div>
 
-    <!-- Floating Background -->
-    <div class="background"></div>
+  <div class="floating-layer" id="hearts" aria-hidden="true"></div>
+  <div class="sparkle-layer" id="sparkles" aria-hidden="true"></div>
 
-    <!-- Hearts -->
-    <div class="hearts" id="hearts"></div>
+  <main class="page-shell">
+    <section class="hero-card" aria-label="Apology message">
+      <div class="hero-top">
+        <div class="small-badge">A little message</div>
+        <div class="mini-heart" aria-hidden="true">💗</div>
+      </div>
 
-    <!-- Sparkles -->
-    <div class="sparkles" id="sparkles"></div>
+      <div class="main-icon" aria-hidden="true">
+        <div class="icon-ring"></div>
+        <div class="icon-core">💙</div>
+      </div>
 
-    <!-- Main Card -->
-    <main class="container">
+      <h1 class="title">I'm Sorry...</h1>
 
-        <div class="glass-card">
+      <p class="subtitle">
+        I know I made mistakes, and I wanted to say it in the most beautiful way I could.
+      </p>
 
-            <div class="top-heart">
-                ❤️
-            </div>
+      <p class="typing-line" id="typingText"></p>
 
-            <h1 class="title">
-                I'm Sorry...
-            </h1>
+      <div class="divider" aria-hidden="true"></div>
 
-            <p class="typing" id="typingText"></p>
+      <div class="button-row">
+        <button id="yesBtn" class="btn btn-yes" type="button">
+          Forgive Me ❤️
+        </button>
 
-            <div class="divider"></div>
+        <button id="noBtn" class="btn btn-no" type="button">
+          No 😤
+        </button>
+      </div>
 
-            <div class="buttons">
-
-                <button id="yesBtn" class="yes">
-                    Forgive Me ❤️
-                </button>
-
-                <button id="noBtn" class="no">
-                    No 😤
-                </button>
-
-            </div>
-
-        </div>
-
-    </main>
-
-    <!-- Success Screen -->
-
-    <section id="successScreen" class="success hidden">
-
-        <div class="success-card">
-
-            <div class="bigHeart">
-                ❤️
-            </div>
-
-            <h1>
-                Thank You
-            </h1>
-
-            <p>
-                You just made my day.
-            </p>
-
-            <p>
-                I promise to do better from today onwards.
-            </p>
-
-            <button id="restart">
-                Replay ✨
-            </button>
-
-        </div>
-
+      <p class="tiny-note">
+        Tap the button that feels right.
+      </p>
     </section>
+  </main>
 
-    <!-- Confetti -->
-    <canvas id="confetti"></canvas>
+  <section id="successScreen" class="success-screen hidden" aria-hidden="true">
+    <div class="success-card">
+      <div class="success-heart" aria-hidden="true">❤️</div>
+      <h2>Thank You</h2>
+      <p>You just made my day.</p>
+      <p>I promise to do better from today onwards.</p>
+      <button id="restart" class="btn btn-restart" type="button">
+        Replay ✨
+      </button>
+    </div>
+  </section>
 
-    <script src="script.js"></script>
+  <canvas id="confetti" aria-hidden="true"></canvas>
 
+  <noscript>
+    <div style="padding:16px;text-align:center;font-family:Poppins,sans-serif;">
+      This page needs JavaScript enabled for the buttons and animations to work.
+    </div>
+  </noscript>
+
+  <script src="script.js"></script>
 </body>
-
 </html>
