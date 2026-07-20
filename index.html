@@ -1,1 +1,99 @@
-<!doctype html><html><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>I'm Sorry</title><link rel='stylesheet' href='style.css'></head><body><div class='hearts'></div><div class='card'><h1>I'm Sorry 💙</h1><p>I know I made mistakes. I hope you'll give me another chance.</p><button id='yes'>Forgive Me ❤️</button><button id='no'>No 😤</button><p id='msg'></p></div><script src='script.js'></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I'm Sorry ❤️</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Great+Vibes&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Floating Background -->
+    <div class="background"></div>
+
+    <!-- Hearts -->
+    <div class="hearts" id="hearts"></div>
+
+    <!-- Sparkles -->
+    <div class="sparkles" id="sparkles"></div>
+
+    <!-- Main Card -->
+    <main class="container">
+
+        <div class="glass-card">
+
+            <div class="top-heart">
+                ❤️
+            </div>
+
+            <h1 class="title">
+                I'm Sorry...
+            </h1>
+
+            <p class="typing" id="typingText"></p>
+
+            <div class="divider"></div>
+
+            <div class="buttons">
+
+                <button id="yesBtn" class="yes">
+                    Forgive Me ❤️
+                </button>
+
+                <button id="noBtn" class="no">
+                    No 😤
+                </button>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- Success Screen -->
+
+    <section id="successScreen" class="success hidden">
+
+        <div class="success-card">
+
+            <div class="bigHeart">
+                ❤️
+            </div>
+
+            <h1>
+                Thank You
+            </h1>
+
+            <p>
+                You just made my day.
+            </p>
+
+            <p>
+                I promise to do better from today onwards.
+            </p>
+
+            <button id="restart">
+                Replay ✨
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- Confetti -->
+    <canvas id="confetti"></canvas>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
